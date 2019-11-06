@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <title>Temperature Dashborard</title>
+</head>
+<style>
+    .Head {
+        background-color: lightblue;
+        color: black;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+
+    #address {
+        width: 98%;
+        margin-bottom: 10px;
+    }
+
+    .divBorder {
+        background-color: azure;
+        border: 2px solid black;
+        /* margin-left :25px; */
+    }
+
+    .Header {
+        background-color: lightblue;
+        color: black;
+        height: 40px;
+        padding-top: 10px;
+        border: 2px solid black;
+    }
+
+    #subscribeTopic,
+    #alonzobarlas,
+    #amabel,
+    #rosedaine,
+    #renzyclaire,
+    #Luz-lan,
+    #diansin,
+    #MaryAira,
+    #tychu,
+    #pasores,
+    #louie,
+    #sample,
+    #tychu,
+    #preAnn,
+    #publishTopic {
+        width: 98%;
+        margin-bottom: 15px;
+    }
+
+    .divMessage {
+        background-color: azure;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    h3 {
+        margin-right: 50px;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <h3><b>Temperature Dashboard</b></h3>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 1</b></h6>
+                    </div>
+                </div>
+                <br>
+                <h6><b>alonzobarlas\temperature</b></h6>
+                <input id="alonzobarlas" type="text" name="alonzobarlas" />
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 2</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>theresaanabelle/temperature</b></h6>
+                <input id="amabel" type="text" name="amabel" />
+
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 3</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>roselyndanica/temperature</b></h6>
+                <input id="rosedaine" type="text" name="rosedaine" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 4</b></h6>
+                    </div>
+                </div>
+                
+                <h6><b>palomayosores/temperature</b></h6>
+                <input id="pasores" type="text" name="pasores" />
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 5</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>MarvieYorong/temperature</b></h6>
+                <input id="sample" type="text" name="sample" />
+            </div>
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group6</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>renzyclaire/temperature</b></h6>
+                <input id="renzyclaire" type="text" name="renzyclaire" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 7</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>LuzmibelAdrian/temperature</b></h6>
+                <input id="Luz-Ian" type="text" name="Luz-lan" />
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 8</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>louiecindy/temperature</b></h6>
+                <input id="louie" type="text" name="louie" />
+
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 9</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>diansingabatan/temperature</b></h6>
+                <input id="diansin" type="text" name="diansin" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 10</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>PreciousAnn</b></h6>
+                <input id="preAnn" type="text" name="preAnn" />
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 11</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>MaryAira/temperature</b></h6>
+                <input id="MaryAira" type="text" name="MaryAira" />
+
+            </div>
+
+            <div class="divBorder col-md-4">
+                <div class=" row">
+                    <div class="Head col-md-12">
+                        <h6><b>Group 12</b></h6>
+                    </div>
+                </div>
+                <br>
+                
+                <h6><b>tyronmarichu/temperature</b></h6>
+                <input id="tychu" type="text" name="tychu" />
+            </div>
+        </div>
+</body>
+<script src="browserMqtt.js"></script>
+<script src="scripts.js"></script>
+
+</html>
